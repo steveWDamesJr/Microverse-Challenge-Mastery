@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MICROVERSE CHALLENGES</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/utilities.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+
+    <!-- Top Bar -->
+    <div class="top-container">
+        <img class="logo" src="images/logo.png" alt="">
+        <h1>Microverse Challenges</h1>
+    </div>
+
+
+
+
+    <!-- Introduction -->
+    <section class="Intro ">
+        <h1>Introduction</h1>
+        <p>Welcome to Microverse-Challenge-Mastery Submissions. It is our goal that you, our future developers, think
+            like developers from day 1 of your journey with us. Towards this end, we have created an easy to follow
+            Challenge-Mastery template.
+
+            <h5>Step 1</h5>
+            Number your coding Challenge.
+            <h5>Step 2</h5>
+            Write the problem that is being asked.
+            <h5>Step 3</h5>
+            Write in plain english, the expected outcome.
+            <h5>Step 4</h5>
+            Write the solution to the problem.
+            <h5>Step 5</h5>
+            Give a step by step explanation of your solution as if you were being interviewed by a HR/Hiring manager.
+            <h5>Build a demo program</h5>
+            Demonstrate practical use case/s of the principles utilized in your solution.
+
+        </p>
+    </section>
+
+    <!-- Example Submissions -->
+    <section class="card">
+        <div class="middle-container">
+            <h2>Example Sumbissions</h2>
+            <h3>1</h3>
+            <p><strong>Problem:</strong> <u>Convert Celsius to Fahrenheit</u>
+                The algorithm to convert from Celsius to Fahrenheit is the temperature in Celsius times 9/5, plus 32.
+
+                You are given a variable celsius representing a temperature in Celsius. Use the variable fahrenheit
+                already defined and assign it the Fahrenheit temperature equivalent to the given Celsius temperature.
+                Use the algorithm mentioned above to help convert the Celsius temperature to Fahrenheit. </p>
+            <p><strong>Expected Outcome:</strong>
+                Given a certain argument representing temperature in Celsius, function calculates fahrenheit.</p>
+            <p><strong>Solution:</strong></p>
+            <div class="codeBlk">
+                <pre><code>
+    function convertToF(celsius) {
+    let fahrenheit= (celsius * 9/5) + 32;
+    return fahrenheit;
+    }
+
+convertToF(30);</code></pre>
+            </div>
+            <div>
+                <h4>Interview Answer</h4>
+                <p>
+                    In order to calculate Farenheit from an argument representing Celsius, we must first know the
+                    algorithim required to calculate this desired result. We are given this algorithim in the question:
+                    "Temperature in Celsius times 9/5, plus 32".
+                    <br>
+                    <br>
+
+                    Next, we determine what we need to instruct the computer to do. The computer must ustilize 'order of
+                    operations' which is BODMAS (Brackets, Orders, Division, Multiplication, Addition, Subtraction) to
+                    calculate our formula.
+                    <br>
+                    <br>
+                    Therefore, our syntax becomes (open parenthesis 9 divided by 5 times 'Celsius' close parenthesis
+                    plus 32?)
+                    <br>
+                    <br>
+                    We pass an argument into our function-call; converToF(). This takes the place of our function
+                    parameter (celsius) and is used in the calculation of our function expression.
+                </p>
+
+            </div>
+            <!-- Celsius to Farenheit Converter APP -->
+            <div>
+                <h4>Build a demo program</h4>
+
+                <div class="tempCon">
+                    <h3>Temperature Converter</h3>
+                    <p>Type a value in the Celsius field to convert the value   to Fahrenheit:</p>
+
+                    <p>
+                        <label>Celsius</label>
+                        <input id="inputCelsius" type="number"  placeholder="Celsius"
+                            oninput="temperatureConverter(this.value)"  onchange="temperatureConverter(this.value)">
+                    </p>
+                    <p>Fahrenheit: <span id="outputFahrenheit"></span></p>
+                    </div>
+
+            </div>
+    </section>
+    <script src="app.js"></script>
+</body>
+
+</html>

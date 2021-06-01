@@ -1,0 +1,11 @@
+.card {
+    margin: 0 auto;
+    box-sizing: border-box;
+    font-size: 1.2rem;
+    background: #fff;
+    color: #000;
+    overflow-wrap: break-word;
+    border-radius: 30px;
+    padding: 4rem;
+    max-width: 95%;
+}
