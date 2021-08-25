@@ -1,8 +1,14 @@
+/* $desktop:1200px;
+$laptop:1024px;
+$tablet:1768px;
+$phone:480px; */
+
 body {
 
     margin: 0;
     background-color: #f5f5f5;
     font-family: 'Montserrat', sans-serif;
+   
 }
 
 .top-container h1, img {
@@ -20,6 +26,11 @@ body {
     
     height: 40px;
 }
+
+.Intro--narrow {
+    max-width: 34remm;
+}
+
 
 hr {
    
@@ -45,6 +56,12 @@ img {
     color: white;
 }
 
+.codeBlk--narrow {
+    /* overflow-y: scroll; */
+    overflow-x: auto;
+    max-width: 20rem;
+}
+
 .tempCon {
     text-align: center;
     box-sizing: border-box;
@@ -55,9 +72,19 @@ img {
     border-radius: 30px;
     padding: 4rem;
     max-width: 1600%;
+    background-color: ;
+    
 }
 
 .tempCon p {
     text-align: justify;
 }
+
+
+@media (max-width: 610px) {
+    .tempCon {
+      
+      max-width: fit-content;
+    }
+
 

@@ -8,4 +8,11 @@
     border-radius: 30px;
     padding: 4rem;
     max-width: 95%;
+    
 }
+
+.card--narrow {
+    max-width: 50em;
+}
+
+
